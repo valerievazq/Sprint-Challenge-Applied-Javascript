@@ -17,7 +17,7 @@ function Header() {
     const h1 = document.createElement('h1');
     const tempSpan = document.createElement('span');
 //append
-    containter.append(dateSpan, h1, tempSpan);
+    container.append(dateSpan, h1, tempSpan);
 //add class
     container.classList.add('header');
     dateSpan.classList.add('date');
