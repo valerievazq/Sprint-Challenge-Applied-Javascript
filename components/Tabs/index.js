@@ -13,13 +13,11 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then(response => {
     console.log(response.data.topics);
     let responseArray = response.data.topics;
-
-    responseArray.forEach(el => {
-        const newT = tabCreator(el)
-        topicText.appendChild(newT)
-    });
+        responseArray.forEach(el => {
+            const newT = tabCreator(el)
+            topicText.appendChild(newT)
+        });
 })
-
     .catch(err => {
         console.log(`There is an error: ${err} ` )
     })
@@ -34,3 +32,4 @@ function tabCreator(topic){
 
     return div
 }
+

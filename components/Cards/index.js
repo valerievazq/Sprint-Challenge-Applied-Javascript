@@ -52,6 +52,7 @@ let createCard = (data) => {
 
 
 let card = document.querySelector('.cards-container');
+
 data.then((response) => {
     let articles = Object.values(response.data.articles);
     articles.forEach((item) => {
